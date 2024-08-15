@@ -11,3 +11,7 @@ O
 contracts/membership-token.clar,0/d/0d35810e7902205e212e50cc594f6c13a378775d
 N
 tests/membership-token.test.ts,c/6/c6f2524bdee3c099b2763b4b4cc13acb6f9955c8
+N
+contracts/proposal-voting.clar,0/6/062f66793419318e225d26de0effd7da052ec9c0
+M
+tests/proposal-voting.test.ts,d/3/d39a019ee6f77c74df327fcdd2b3ff17836f2148
