@@ -15,3 +15,7 @@ N
 contracts/proposal-voting.clar,0/6/062f66793419318e225d26de0effd7da052ec9c0
 M
 tests/proposal-voting.test.ts,d/3/d39a019ee6f77c74df327fcdd2b3ff17836f2148
+Q
+!contracts/proposal-execution.clar,2/2/2274ddaee0b74f76175985fe790902b8a76c3c23
+P
+ tests/proposal-execution.test.ts,f/6/f6951aab83d6181cf7cae258d273a831d0398760

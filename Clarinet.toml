@@ -15,6 +15,11 @@ path = 'contracts/membership-token.clar'
 clarity_version = 2
 epoch = 2.5
 
+[contracts.proposal-execution]
+path = 'contracts/proposal-execution.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.proposal-voting]
 path = 'contracts/proposal-voting.clar'
 clarity_version = 2

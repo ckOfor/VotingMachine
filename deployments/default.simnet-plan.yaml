@@ -60,6 +60,11 @@ plan:
             path: contracts/membership-token.clar
             clarity-version: 2
         - emulated-contract-publish:
+            contract-name: proposal-execution
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/proposal-execution.clar
+            clarity-version: 2
+        - emulated-contract-publish:
             contract-name: proposal-voting
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/proposal-voting.clar
