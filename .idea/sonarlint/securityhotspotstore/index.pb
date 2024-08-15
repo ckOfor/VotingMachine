@@ -19,3 +19,7 @@ Q
 !contracts/proposal-execution.clar,2/2/2274ddaee0b74f76175985fe790902b8a76c3c23
 P
  tests/proposal-execution.test.ts,f/6/f6951aab83d6181cf7cae258d273a831d0398760
+A
+package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
