@@ -9,6 +9,11 @@ requirements = []
 path = 'contracts/governance-token.clar'
 clarity_version = 2
 epoch = 2.5
+
+[contracts.membership-token]
+path = 'contracts/membership-token.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
 passes = ['check_checker']
 
