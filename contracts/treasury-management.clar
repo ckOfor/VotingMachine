@@ -138,3 +138,18 @@
 (define-read-only (get-current-spending-limit)
   (ok (var-get spending-limit))
 )
+
+;; Helper functions
+
+;; Check if a proposal has been executed through governance
+(define-read-only (is-proposal-executed (proposal-id uint))
+  (contract-call? .proposal-execution is-proposal-executed proposal-id)
+)
+
+;; Contract initialization
+(define-public (initialize (governance-token principal))
+  (begin
+    (asserts! (is-eq tx-sender (var-get contract-owner)) ERR_UNAUTHORIZED)
+    (ok true)
+  )
+)
