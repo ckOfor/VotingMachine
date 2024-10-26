@@ -109,3 +109,32 @@
     (ok true)
   )
 )
+
+;; g
+
+;; Set new spending limit (requires governance approval)
+(define-public (set-spending-limit (new-limit uint))
+  (begin
+    (asserts! (is-eq tx-sender (var-get contract-owner)) ERR_UNAUTHORIZED)
+    (var-set spending-limit new-limit)
+    (ok true)
+  )
+)
+
+;; Read-only functions
+
+(define-read-only (get-treasury-balance (token principal))
+  (default-to { amount: u0 } (map-get? treasury-balance { token: token }))
+)
+
+(define-read-only (get-spending-proposal (proposal-id uint))
+  (map-get? spending-proposals { proposal-id: proposal-id })
+)
+
+(define-read-only (get-transaction (tx-id uint))
+  (map-get? transaction-history { tx-id: tx-id })
+)
+
+(define-read-only (get-current-spending-limit)
+  (ok (var-get spending-limit))
+)
