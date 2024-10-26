@@ -23,3 +23,7 @@ A
 package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+R
+"contracts/treasury-management.clar,c/0/c05824cbb73472c7281d4a68a5ee6bf9a790c121
+Q
+!tests/treasury-management.test.ts,c/d/cdcd73a4ce8e6ec701af6131510302ca132427e8
