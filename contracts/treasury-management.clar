@@ -39,3 +39,21 @@
     block: uint
   }
 )
+
+;; Public functions
+
+;; Function to deposit funds into treasury
+(define-public (deposit (token principal) (amount uint))
+  (let
+    (
+      (current-balance (default-to { amount: u0 } (map-get? treasury-balance { token: token })))
+    )
+    ;; Implement token transfer from sender to treasury
+    ;; This would need to interact with the specific token contract
+    (map-set treasury-balance
+      { token: token }
+      { amount: (+ (get amount current-balance) amount) }
+    )
+    (ok true)
+  )
+)
